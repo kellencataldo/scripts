@@ -135,7 +135,6 @@ def main() -> int:
 
     for count, event in enumerate(event_list):
         if count == args.max:
-
             break
         event_string: str = format_event_string(event)
         separator: str = "*" * 80
