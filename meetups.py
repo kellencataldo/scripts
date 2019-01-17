@@ -128,16 +128,15 @@ def main() -> int:
     response_dict: typing.Dict = response.json()
 
     header_string: str = format_header_string(response_dict['city'])
-    sys.stdout.write("%s\n\n" % (header_string))
+    separator: str = "*" * 80
+    sys.stdout.write("%s\n%s\n" % (header_string, separator))
 
     event_list: typing.List = response_dict['events']
     sort_method_dict[args.sort](event_list)
-
     for count, event in enumerate(event_list):
         if count == args.max:
             break
         event_string: str = format_event_string(event)
-        separator: str = "*" * 80
         sys.stdout.write("%s\n%s\n" % (event_string, separator))
     return 0
 
