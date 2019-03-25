@@ -76,9 +76,11 @@ def format_request_string(search_term: str) -> str:
 
 def format_header_string(city_dict: typing.Dict) -> str:
     header_string: str = (
-            f"city: {city_dict['city']}, state: {city_dict['state']}, "
-            f"country: {city_dict['country']}, zip: {city_dict['zip']}, "
-            f"total members: {city_dict['member_count']}"
+            f"\033[93mCITY:\033[0m {city_dict['city']}, "
+            f"\033[93mSTATE:\033[0m {city_dict['state']}, "
+            f"\033[93mCOUNTRY:\033[0m {city_dict['country']}, "
+            f"\033[93mZIP:\033[0m {city_dict['zip']}, "
+            f"\033[93mTOTAL MEMBERS:\033[0m {city_dict['member_count']}"
             )
     return header_string
 
