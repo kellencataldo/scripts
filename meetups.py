@@ -26,7 +26,7 @@ START_TIME: datetime.time = datetime.time(17, 00, 00)
 END_TIME: datetime.time = datetime.time(20, 00, 00)
 
 # total number of results to print
-MAX_DISPLAYED: int = 3
+MAX_DISPLAYED: int = 5
 
 
 class SortMethod(enum.Enum):
