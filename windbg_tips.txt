@@ -1,0 +1,4 @@
+!thread ouputs info about a certain thread. .thread switches the register context to the given thread
+
+!process 0 will show stacks for all paged in kernel stacks. !process 2 will show both paged in and paged out kernel stacks.
+The second choice is more useful for debugging deadlocks where a waiting thread will be paged out.
