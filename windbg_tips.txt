@@ -1,4 +1,3 @@
 !thread ouputs info about a certain thread. .thread switches the register context to the given thread
 
-!process 0 will show stacks for all paged in kernel stacks. !process 2 will show both paged in and paged out kernel stacks.
-The second choice is more useful for debugging deadlocks where a waiting thread will be paged out.
+!stacks 0 [filter] will show a single line of info for each thread that has the filter string somewhere in the callstack. !process 2 will show the full stack for each thread that has the filter string somewhere in teh callstack. The second one is more useful for debugging deadlocks as it displays the full call stack,
