@@ -1,0 +1,5 @@
+!thread ouputs info about a certain thread. .thread switches the register context to the given thread
+
+!stacks 0 [filter] will show a single line of info for each thread that has the filter string somewhere in the callstack. !process 2 will
+show the full stack for each thread that has the filter string somewhere in teh callstack. The second one is more useful for debugging
+deadlocks as it displays the full call stack,
