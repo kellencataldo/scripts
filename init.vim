@@ -12,6 +12,9 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
+let g:ale_python_pyflakes_executable = 'pyflakes3'
+let g:ale_python_flake8_executable = 'python3'
+let g:ale_python_mypy_options = '--ignore-missing-imports'
 
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
