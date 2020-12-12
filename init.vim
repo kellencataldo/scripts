@@ -9,7 +9,9 @@ Plug 'dense-analysis/ale'
 Plug 'LucHermitte/lh-vim-lib'
 Plug 'LucHermitte/local_vimrc'
 Plug 'Valloric/YouCompleteMe'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 let g:ale_python_pyflakes_executable = 'pyflakes3'
